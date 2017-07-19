@@ -1,11 +1,11 @@
 // CRIAR A LISTA
 
-function newElement() {
+function addTodoListItem() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("input").value;
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
-    if (inputValue === "") {
+    if (!inputValue) {
         alert("O campo precisa ser preenchido");
     } else {
         document.getElementById("lista").appendChild(li);
@@ -13,4 +13,4 @@ function newElement() {
     document.getElementById("input").value = "";
 }
 
-document.getElementById("buttonAdd").addEventListener("click", newElement);
+document.getElementById("buttonAdd").addEventListener("click", addTodoListItem);
