@@ -6,7 +6,8 @@
  }
  
  body {
-     background-color: #f47a36;
+     background-color: #36f466;
+     ;
  }
  
  .wrapper {
@@ -32,14 +33,19 @@
  
  header .btn {
      height: 40px;
-     padding: 10px;
-     background: #d9d9d9;
-     color: #555;
+     background-color: #3fa004;
+     color: #fff;
      text-align: center;
      font-size: 16px;
      cursor: pointer;
      transition: 0.3s;
-     flex: 1 1 25%;
+     width: 40px;
+     border: none;
+ }
+ 
+ header .btn:hover {
+     transition: linear 0.2s all;
+     background-color: #317b03;
  }
  
  .lista {
@@ -47,12 +53,12 @@
  }
  
  .lista li {
-     border-top: 1px solid #f70000;
-     padding: 10px 0;
+     height: 40px;
      display: flex;
      background: #fff;
      width: 100%;
      font-size: 20px;
+     margin-bottom: 5px;
  }
  
  .lista li:nth-child(odd) {

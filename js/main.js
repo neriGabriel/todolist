@@ -1,6 +1,7 @@
+var btn = document.getElementById("buttonAdd");
+
 // CRIAR ELEMENTOS NOVOS NA LISTA
 function createNewElement() {
-
     var li = document.createElement("li");
     var inputValue = document.getElementById("input").value;
     var input = document.getElementById("input");
@@ -14,7 +15,7 @@ function createNewElement() {
         alert("O campo precisa ser preenchido");
     }
     if (input.value.length > 50) {
-        alert("O numero máximo de caracteres é 50.");
+        alert("O numero máximo de caracteres é 50, voce digitou " + input.value.length + " caracteres.");
     } else {
         document.getElementById("lista").appendChild(li);
     }
@@ -38,8 +39,15 @@ function createNewElement() {
             div.style.display = "none";
         }
     }
-
 }
 
 
-document.getElementById("buttonAdd").addEventListener("click", createNewElement);
+
+btn.addEventListener("click", createNewElement);
+
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 13) {
+        createNewElement();
+    }
+
+});
