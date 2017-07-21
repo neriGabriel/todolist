@@ -13,8 +13,7 @@ function createNewElement() {
 
     if (!inputValue) {
         alert("O campo precisa ser preenchido");
-    }
-    if (input.value.length > 50) {
+    } else if (input.value.length > 50) {
         alert("O numero máximo de caracteres é 50, voce digitou " + input.value.length + " caracteres.");
     } else {
         document.getElementById("lista").appendChild(li);
@@ -39,6 +38,16 @@ function createNewElement() {
             div.style.display = "none";
         }
     }
+    document.addEventListener('keyup', function(e) {
+        for (i = 0; i < close.length; i++) {
+            if (e.keyCode == 27) {
+                close[i] = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+        }
+    });
 }
 
 
@@ -49,5 +58,4 @@ document.addEventListener('keyup', function(e) {
     if (e.keyCode == 13) {
         createNewElement();
     }
-
 });
