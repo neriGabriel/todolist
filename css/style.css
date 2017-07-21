@@ -6,8 +6,16 @@
  }
  
  body {
-     background-color: #36f466;
-     ;
+     background-color: #e64b4b;
+ }
+ 
+ h1 {
+     color: #fff;
+     font-size: 80px;
+     text-align: center;
+     display: block;
+     font-family: monospace;
+     margin: 50px 0 0 0;
  }
  
  .wrapper {
@@ -20,7 +28,7 @@
      height: 40px;
      width: 100%;
      display: flex;
-     margin-top: 200px;
+     margin-top: 100px;
  }
  
  header .input {
@@ -74,8 +82,9 @@
  }
  
  .close {
-     background: #f70000;
+     background: #de0000;
      height: 40px;
+     border: 1px solid #b70000;
      color: #fff;
      line-height: 40px;
      font-size: 29px;
