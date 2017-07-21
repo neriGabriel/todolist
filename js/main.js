@@ -40,16 +40,6 @@ function createNewElement() {
             div.style.display = "none";
         }
     }
-    document.addEventListener('keyup', function(e) {
-        for (i = 0; i < close.length; i++) {
-            if (e.keyCode == 27) {
-                close[i] = function() {
-                    var div = this.parentElement;
-                    div.style.display = "none";
-                }
-            }
-        }
-    });
 }
 
 
