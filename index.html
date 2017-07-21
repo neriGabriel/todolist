@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>To do List</title>
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="css/style.css">
@@ -9,13 +10,15 @@
 
 <body>
 
-    <div>
-        <input type="text" id="input">
-        <button id="buttonAdd">Adicionar</button>
+    <div class="wrapper">
+        <header>
+            <input type="text" class="input" id="input" placeholder="Digite aqui o seu item">
+            <button id="buttonAdd" class="btn">&#10003;</button>
+        </header>
+        <ul id="lista" class="lista"></ul>
     </div>
 
 
-    <ul id="lista"></ul>
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
