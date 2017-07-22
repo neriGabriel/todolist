@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To do List</title>
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="css/style.css">
@@ -11,9 +12,16 @@
 <body>
 
     <div class="wrapper">
-        <h1>TODO LIST</h1>
+        <h1>TO-DO LIST</h1>
+        <ul>
+            <li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </li>
+        </ul>
         <header>
-            <input type="text" class="input" id="input" placeholder="Digite aqui o seu item">
+            <input type="text" class="input" id="input" placeholder="Digite aqui o seu item (aperte 'Esc' para deletar)" maxlength="40">
             <button id="buttonAdd" class="btn">&#10003;</button>
         </header>
         <ul id="lista" class="lista"></ul>
@@ -23,5 +31,6 @@
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 
 </html>
