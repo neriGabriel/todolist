@@ -55,7 +55,6 @@ document.addEventListener("keyup", function(e) {
 });
 
 // APAGAR ELEMENTO QUANDO APERTAR O ESC
-btn.addEventListener("click", addNewElement);
 document.addEventListener("keyup", function(e) {
     var ul = document.getElementsByClassName("lista");
     var li = document.getElementsByClassName("element");
@@ -65,8 +64,7 @@ document.addEventListener("keyup", function(e) {
         if (x.item(i).nodeType == 1) {
             arr.push(x.item(i));
             if (e.keyCode == 27) {
-                var lastElement = arr[arr.length - 1];
-                lastElement.outerHTML = "";
+                console.log(arr);
             }
         }
     }
