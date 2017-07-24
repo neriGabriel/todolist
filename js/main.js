@@ -59,10 +59,15 @@ btn.addEventListener("click", addNewElement);
 document.addEventListener("keyup", function(e) {
     var ul = document.getElementsByClassName("lista");
     var li = document.getElementsByClassName("element");
-    for (i = 0; i < ul.length; i++) {
-        if (e.keyCode == 27) {
-            console.log(ul[i].lastChild);
-            ul[i].lastChild.style.display = "none";
+    var arr = new Array();
+    var x = li;
+    for (i = 0; i < x.length; i++) {
+        if (x.item(i).nodeType == 1) {
+            arr.push(x.item(i));
+            if (e.keyCode == 27) {
+                var lastElement = arr[arr.length - 1];
+                lastElement.outerHTML = "";
+            }
         }
     }
 });

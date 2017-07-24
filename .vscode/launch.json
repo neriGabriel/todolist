@@ -4,7 +4,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/Matheus%20Barone/Desktop/TO-DO-LIST/index.html",
+            "url": "file:///C:/Users/Work/Desktop/todolist/index.html",
             "webRoot": "${workspaceRoot}"
         },
         {
