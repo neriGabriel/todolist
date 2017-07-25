@@ -42,6 +42,10 @@ function addNewElement() {
             div.style.display = "none";
         }
     }
+
+
+
+
 };
 
 
@@ -58,15 +62,8 @@ document.addEventListener("keyup", function(e) {
 document.addEventListener("keyup", function(e) {
     var ul = document.getElementsByClassName("lista");
     var li = document.getElementsByClassName("element");
-    var arr = new Array();
-    var x = li;
-    for (i = 0; i < x.length; i++) {
-        if (x.item(i).nodeType == 1) {
-            arr.push(x.item(i));
-            if (e.keyCode == 27) {
-                console.log(arr);
-            }
-        }
+    if (e.keyCode == 27) {
+        console.log(ul.lastChild.remove());
     }
 });
 
