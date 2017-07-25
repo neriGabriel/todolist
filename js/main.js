@@ -61,9 +61,9 @@ document.addEventListener("keyup", function(e) {
 // APAGAR ELEMENTO QUANDO APERTAR O ESC
 document.addEventListener("keyup", function(e) {
     var ul = document.getElementsByClassName("lista");
-    var li = document.getElementsByClassName("element");
-    if (e.keyCode == 27) {
-        console.log(ul.lastChild.remove());
+    var list = document.getElementsByClassName("element");
+    if (e.keyCode == 27 && list && list.length) {
+        list[list.length - 1].remove();
     }
 });
 
