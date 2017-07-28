@@ -1,3 +1,7 @@
-TODOLIST CRIADA PARA ESTUDO DE JAVASCRIPT.
+Tecnologias utilizadas:
 
-LINK: http://matheusbarone.com/todolist/
+- Javascript
+- HTML
+- CSS
+- Sincronização com o banco de dados "Firebase".
+
